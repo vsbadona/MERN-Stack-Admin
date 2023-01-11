@@ -2,7 +2,6 @@ const express = require('express')
 const dotenv = require('dotenv')
 const cors = require('cors')
 dotenv.config()
-const { MongoClient, ServerApiVersion } = require('mongodb');
 const routes = require('./routes/userRoutes')
 const userProfile = require('./routes/userProfile')
 const { mongoose } = require('mongoose')
