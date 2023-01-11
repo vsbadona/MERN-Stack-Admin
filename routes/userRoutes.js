@@ -4,7 +4,8 @@ const bcrypt = require('bcryptjs')
 const User = require('../model/userSchema')
 const getUser = require('../middleware/getUser')
 const authenticate = require('../middleware/authenticate')
-const PostAuthenticate = require('../middleware/postAuthenticate')
+// const PostAuthenticate = require('../middleware/PostAuthenticate')
+const PostAuthenticate = require('../middleware/PostAuthenticate')
 const sgMail = require('@sendgrid/mail')
 
 routes.get('/users', async (req, res) => {
