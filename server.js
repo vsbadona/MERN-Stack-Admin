@@ -15,9 +15,9 @@ app.use('/user', userProfile)
 
 mongoose.set("strictQuery", true);
 mongoose.connect(process.env.DATABASE_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
     .then(() => {
         app.listen(PORT, () =>
             console.log(`server running on http://localhost:${PORT}`)
